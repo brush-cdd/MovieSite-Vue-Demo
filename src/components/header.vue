@@ -1,5 +1,18 @@
 <template>
-  <header class="header">
-    <h1 class="logo">Vue Demo By Chauncy</h1>
+  <header class="primary">
+    <first-bar/>
+    <Menu/>
   </header>
 </template>
+<script>
+import FirstBar from '../components/firstbar.vue'
+import Menu from '../components/menu.vue'
+
+export default {
+  components: {
+    FirstBar,
+    Menu
+  }
+}
+</script>
+

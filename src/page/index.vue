@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <Header></Header>
+  <div class="skin-orange">
+    <Header/>
+    <Container/>
     <div class="article_list">
       <ul>
         <li v-for="i in list">
@@ -16,10 +17,18 @@
 <script>
 import Header from '../components/header.vue'
 import Footer from '../components/footer.vue'
+import FirstBar from '../components/firstbar.vue'
+import Menu from '../components/menu.vue'
+import Container from '../components/container.vue'
+import $ from 'jquery'
+
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    FirstBar,
+    Menu,
+    Container
   },
   data() {
     return {
